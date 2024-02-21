@@ -9,5 +9,5 @@ Progress:
 Still figuring out setup
 
 
-Author:
+Developers:
 Manoj Elango
