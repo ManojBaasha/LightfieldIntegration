@@ -38,7 +38,7 @@ class MyFrame(LFGUI):
         self.init_bindings()
         
     def init_bindings(self):
-        # self.m_connectcamerabutton.Bind(wx.EVT_BUTTON, self.on_connect_camera)
+        self.m_connectcamerabutton.Bind(wx.EVT_BUTTON, self.on_connect_camera)
         print("")
 
     def init_lightfield(self):
@@ -51,11 +51,11 @@ class MyFrame(LFGUI):
         # Find connected device
         for device in self.experiment.ExperimentDevices:
             if (device.Type == DeviceType.Camera):
-                self.m_status.SetLabel("Camera found")
+                self.m_statusBar1.SetLabel("Camera found")
                 return True
          
         # If connected device is not a camera inform the user
-        self.m_status.SetLabel("Camera not found. Please add a camera and try again.")
+        self.m_statusBar1.SetLabel("Camera not found. Please add a camera and try again.")
         # create an alert dialog
         dlg = wx.MessageDialog(self, "Camera not found. Please add a camera and try again.", "Error", wx.OK | wx.ICON_ERROR)
         dlg.ShowModal() 
