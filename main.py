@@ -39,20 +39,36 @@ class MyFrame(LFGUI):
         
     def init_bindings(self):
         self.m_connectcamerabutton.Bind(wx.EVT_BUTTON, self.on_connect_camera)
-        print("")
+        self.m_closebutton.Bind(wx.EVT_BUTTON, self.on_close)
 
     def init_lightfield(self):
+        self.auto = Automation(True, List[String]())
+        # Get experiment object
+        self.experiment = self.auto.LightFieldApplication.Experiment
+        # print("opened lightfield application")
+    
+    def on_close(self, event):
+        self.Close()
+        # self.experiment.Close()
+        # self.auto.Application.Exit()
+
+        
+    def on_connect_camera(self, event): # do not need this since it auto connects to the camera
+        
         auto = Automation(True, List[String]())
         # Get experiment object
         self.experiment = auto.LightFieldApplication.Experiment
-        print("opened lightfield application")
         
-    def on_connect_camera(self, event):
-        # Find connected device
-        for device in self.experiment.ExperimentDevices:
-            if (device.Type == DeviceType.Camera):
-                self.m_statusBar1.SetLabel("Camera found")
-                return True
+        # Check for device and inform user if one is needed
+        if (self.experiment.AvailableDevices.Count == 0):
+            dlg = wx.MessageDialog(self, "Device not found. Please add a device and try again.", "Error", wx.OK | wx.ICON_ERROR)
+            dlg.ShowModal() 
+        else:
+            # Find connected device
+            for device in self.experiment.ExperimentDevices:
+                if (device.Type == DeviceType.Camera):
+                    self.m_statusBar1.SetLabel("Camera found")
+                    return True
          
         # If connected device is not a camera inform the user
         self.m_statusBar1.SetLabel("Camera not found. Please add a camera and try again.")

@@ -38,8 +38,8 @@ class MyFrame1 ( wx.Frame ):
 		self.m_connectcamerabutton = wx.Button( self.m_testpanel, wx.ID_ANY, u"Connect to Camera", wx.DefaultPosition, wx.DefaultSize, 0 )
 		fgSizer2.Add( self.m_connectcamerabutton, 0, wx.ALL, 5 )
 
-		self.m_button26 = wx.Button( self.m_testpanel, wx.ID_ANY, u"MyButton", wx.DefaultPosition, wx.DefaultSize, 0 )
-		fgSizer2.Add( self.m_button26, 0, wx.ALL, 5 )
+		self.m_closebutton = wx.Button( self.m_testpanel, wx.ID_ANY, u"Close", wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer2.Add( self.m_closebutton, 0, wx.ALL, 5 )
 
 		self.m_staticText19 = wx.StaticText( self.m_testpanel, wx.ID_ANY, u"Experiment Name", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText19.Wrap( -1 )
