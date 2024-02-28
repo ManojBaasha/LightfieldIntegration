@@ -77,7 +77,6 @@ class MyFrame(LFGUI):
         dlg.ShowModal() 
         return False
 
-
 # init main loop
 app = wx.App(False)
 frame = MyFrame(None)
