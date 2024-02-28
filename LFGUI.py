@@ -46,16 +46,16 @@ class MyFrame1 ( wx.Frame ):
 
 		fgSizer2.Add( self.m_staticText19, 0, wx.ALL, 5 )
 
-		self.m_textCtrl13 = wx.TextCtrl( self.m_testpanel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		fgSizer2.Add( self.m_textCtrl13, 0, wx.ALL, 5 )
+		self.m_expname = wx.TextCtrl( self.m_testpanel, wx.ID_ANY, u"testpics", wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer2.Add( self.m_expname, 0, wx.ALL, 5 )
 
-		self.m_staticText20 = wx.StaticText( self.m_testpanel, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText20 = wx.StaticText( self.m_testpanel, wx.ID_ANY, u"Experimenter", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText20.Wrap( -1 )
 
 		fgSizer2.Add( self.m_staticText20, 0, wx.ALL, 5 )
 
-		self.m_textCtrl14 = wx.TextCtrl( self.m_testpanel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		fgSizer2.Add( self.m_textCtrl14, 0, wx.ALL, 5 )
+		self.m_expermentrname = wx.TextCtrl( self.m_testpanel, wx.ID_ANY, u"manoj", wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer2.Add( self.m_expermentrname, 0, wx.ALL, 5 )
 
 		self.m_staticText21 = wx.StaticText( self.m_testpanel, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText21.Wrap( -1 )

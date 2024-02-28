@@ -580,7 +580,7 @@
                       <property name="minimize_button">0</property>
                       <property name="minimum_size"></property>
                       <property name="moveable">1</property>
-                      <property name="name">m_textCtrl13</property>
+                      <property name="name">m_expname</property>
                       <property name="pane_border">1</property>
                       <property name="pane_position"></property>
                       <property name="pane_size"></property>
@@ -598,7 +598,7 @@
                       <property name="validator_style">wxFILTER_NONE</property>
                       <property name="validator_type">wxDefaultValidator</property>
                       <property name="validator_variable"></property>
-                      <property name="value"></property>
+                      <property name="value">testpics</property>
                       <property name="window_extra_style"></property>
                       <property name="window_name"></property>
                       <property name="window_style"></property>
@@ -637,7 +637,7 @@
                       <property name="gripper">0</property>
                       <property name="hidden">0</property>
                       <property name="id">wxID_ANY</property>
-                      <property name="label">MyLabel</property>
+                      <property name="label">Experimenter</property>
                       <property name="markup">0</property>
                       <property name="max_size"></property>
                       <property name="maximize_button">0</property>
@@ -707,7 +707,7 @@
                       <property name="minimize_button">0</property>
                       <property name="minimum_size"></property>
                       <property name="moveable">1</property>
-                      <property name="name">m_textCtrl14</property>
+                      <property name="name">m_expermentrname</property>
                       <property name="pane_border">1</property>
                       <property name="pane_position"></property>
                       <property name="pane_size"></property>
@@ -725,7 +725,7 @@
                       <property name="validator_style">wxFILTER_NONE</property>
                       <property name="validator_type">wxDefaultValidator</property>
                       <property name="validator_variable"></property>
-                      <property name="value"></property>
+                      <property name="value">manoj</property>
                       <property name="window_extra_style"></property>
                       <property name="window_name"></property>
                       <property name="window_style"></property>
